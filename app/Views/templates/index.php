@@ -49,7 +49,7 @@ https://www.tooplate.com/view/2125-artxibition
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
-                    <span>Shalom!! Acara kita tinggal <?= $day_to_go; ?> hari lagi</span>
+                    <span>Shalom!! Acara kita tinggal <span id="day_to_go"><?= $day_to_go; ?></span> hari lagi</span>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="text-button">

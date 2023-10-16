@@ -33,6 +33,7 @@
       let now = new Date().getTime(),
           distance = countDown - now;
 
+      document.getElementById('day_to_go').innerText = Math.floor(distance / (day)),
       document.getElementById('days').innerText = Math.floor(distance / (day)),
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
