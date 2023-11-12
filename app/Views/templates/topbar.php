@@ -8,7 +8,7 @@
         <li><a href="<?= base_url(); ?>home/about">About Us</a></li>
         <li><a href="<?= base_url(); ?>home/rent">Rent Venue</a></li>
         <li><a href="<?= base_url(); ?>home/shows">Shows & Events</a></li>
-        <li><a href="<?= base_url(); ?>home/tickets">Tickets</a></li>
+        <li><a href="" data-bs-toggle="modal" data-bs-target="#formtiket">Tickets</a></li>
         <?php if (logged_in()) : ?>
             <li><a href="<?= base_url('logout'); ?>"">Logout</a></li>
         <?php endif; ?>

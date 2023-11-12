@@ -15,6 +15,8 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/public/css/bootstrap.min.css">
 
+    <link rel="stylesheet" type="text/css" href="<?= base_url('/public/css/bootstrap.css'); ?>" />
+
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/public/css/font-awesome.css">
 
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/public/css/owl-carousel.css">
@@ -164,6 +166,7 @@ https://www.tooplate.com/view/2125-artxibition
 
     <!-- Bootstrap -->
     <script src="<?= base_url(); ?>/public/js/popper.js"></script>
+    <script src="<?= base_url('/public/js/bootstrap.bundle.js'); ?>"></script>
     <script src="<?= base_url(); ?>/public/js/bootstrap.min.js"></script>
 
     <!-- Plugins -->
@@ -177,6 +180,7 @@ https://www.tooplate.com/view/2125-artxibition
 
     <!-- Global Init -->
     <script src="<?= base_url(); ?>/public/js/custom.js"></script>
+    <script src="<?= base_url('/public/js/script.js'); ?>"></script>
 
 </body>
 

@@ -21,7 +21,9 @@
                     <h6>3 Februari 2024 16:00 WIB</h6>
                     <h2>KKR Youth 2024</h2>
                     <div class="main-white-button">
-                        <a href="ticket-details.html">Purchase Tickets</a>
+                        <a href="" class="link-primary modaltiket" data-bs-toggle="modal" data-bs-target="#formtiket" name="tiket" id="tiket">
+                            Purchase Tiket
+                        </a>
                     </div>
                 </div>
             </div>
@@ -248,6 +250,99 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="formtiket" tabindex="-1" aria-labelledby="judultiket" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold text-primary" id="judulLog">Form Pembelian Tiket</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form autocomplete="off" action="" method="POST">
+                <div class="modal-body" style="padding-top:2px;">
+                    <input type="hidden" name="id" id="id" value="">
+                    <table class="table table-borderless" style="margin-bottom: 0px;">
+                        <tr>
+                            <div class="form-group">
+                                <td style="width: 30%;">
+                                    <label for="nama" class="fw-bold">Nama</label>
+                                </td>
+                                <td style="width: 70%;">
+                                    <input class="form-control form-control-sm" type="text" id="nama" name="nama">
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="form-group">
+                                <td style="width: 30%;">
+                                    <label for="email" class="fw-bold">Email</label>
+                                </td>
+                                <td style="width: 70%;">
+                                    <input class="form-control form-control-sm" type="text" id="email" name="email">
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="form-group" style="margin-bottom: 0px;">
+                                <td style="width: 30%;">
+                                    <label for="hp" class="fw-bold">No. HP</label>
+                                </td>
+                                <td style="width: 70%;">
+                                    <input class="form-control form-control-sm" type="text" id="hp" name="hp">
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="form-group" style="margin-bottom: 0px;">
+                                <td style="width: 30%;">
+                                    <label for="gereja" class="fw-bold">Gereja</label>
+                                </td>
+                                <td style="width: 70%;">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="gereja" id="gereja">
+                                        <option value="GBI KBP">GBI KBP</option>
+                                        <option value="GBI PPL">GBI PPL</option>
+                                        <option value="GBI Lembang">GBI Lembang</option>
+                                        <option value="GGP Alfa Omega">GGP Alfa Omega</option>
+                                        <option value="GGP Cikalong">GGP Cikalong</option>
+                                        <option value="Gereja New Life">Gereja New Life</option>
+                                        <option value="GPdI Padalarang">GPdI Padalarang</option>
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="form-group" style="margin-bottom: 0px;">
+                                <td style="width: 30%;">
+                                    <label for="jumlah" class="fw-bold">Jumlah</label>
+                                </td>
+                                <td style="width: 70%;">
+                                    <div class="center" style="width: 40%;">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    <span class="fa fa-minus"></span>
+                                                </button>
+                                            </span>
+                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                    <span class="fa fa-plus"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </div>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" id="updatelisensi" class="btn btn-primary" data-bs-dismiss="modal">Beli</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
