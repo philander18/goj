@@ -31,8 +31,14 @@ https://www.tooplate.com/view/2125-artxibition
 -->
 </head>
 
-<body>
-
+<body style="background-color: #5F9FD4;">
+    <!-- <?php
+            $permitted_chars = '0123456789';
+            $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
+            $numbarcode = substr(str_shuffle($permitted_chars), 0, 5);
+            echo $generator->getBarcode($numbarcode, $generator::TYPE_CODE_128);
+            echo sprintf("%08d", $numbarcode);
+            ?> -->
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
         <div class="preloader-inner">
@@ -63,7 +69,7 @@ https://www.tooplate.com/view/2125-artxibition
     </div>
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky" style="background-color: #F58B78">
         <div class="container">
             <div class="row">
                 <div class="col-12">

@@ -1,16 +1,16 @@
 <nav class="main-nav">
     <!-- ***** Logo Start ***** -->
-    <a href="index.html" class="logo">GOJ <em>Encounter</em></a>
+    <a href="index.html" class="logo text-white">GOJ <em>Encounter</em></a>
     <!-- ***** Logo End ***** -->
     <!-- ***** Menu Start ***** -->
     <ul class="nav">
-        <li><a href="<?= base_url(); ?>" class="active">Home</a></li>
-        <li><a href="<?= base_url(); ?>home/about">About Us</a></li>
-        <li><a href="<?= base_url(); ?>home/rent">Rent Venue</a></li>
-        <li><a href="<?= base_url(); ?>home/shows">Shows & Events</a></li>
-        <li><a href="" data-bs-toggle="modal" data-bs-target="#formtiket">Tickets</a></li>
+        <li><a href="<?= base_url(); ?>" class="active text-white">Home</a></li>
+        <li><a href="<?= base_url(); ?>home/about" class="text-white">About Us</a></li>
+        <li><a href="<?= base_url(); ?>home/rent" class="text-white">Rent Venue</a></li>
+        <li><a href="<?= base_url(); ?>home/shows" class="text-white">Shows & Events</a></li>
+        <li><a href="" data-bs-toggle="modal" data-bs-target="#formtiket" class="text-white">Tickets</a></li>
         <?php if (logged_in()) : ?>
-            <li><a href="<?= base_url('logout'); ?>"">Logout</a></li>
+            <li><a href="<?= base_url('logout'); ?>" class="text-white">Logout</a></li>
         <?php endif; ?>
     </ul>
     <a class='menu-trigger'>

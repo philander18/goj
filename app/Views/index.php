@@ -1,7 +1,7 @@
 <?= $this->extend('templates/index'); ?>
 <?= $this->section('page-content'); ?>
 <!-- ***** Main Banner Area Start ***** -->
-<div class="main-banner">
+<div class="main-banner" style="background-image: url(<?= base_url('/public/images/background_depan.jpg'); ?>); background-size: 100%; background-position: center;">
     <div class="counter-content">
         <ul>
             <li>Days<span id="days"></span></li>
@@ -18,13 +18,16 @@
                         <i class="fa fa-arrow-up"></i>
                         <span>Next Show</span>
                     </div> -->
-                    <h6>3 Februari 2024 16:00 WIB</h6>
-                    <h2>KKR Youth 2024</h2>
-                    <div class="main-white-button">
+                    <h4 class="text-white">3 Februari 2024 16:00 WIB</h4>
+                    <h2 class="mb-0"">GENERATION</h2>
+                    <h2 class=" mt-0 mb-0">OF</h2>
+                    <h2 class="mt-0">JEREMIAH</h2>
+                    <h4 class="text-white">Kebaktian Kebangkitan Rohani</h4>
+                    <!-- <div class="main-white-button">
                         <a href="" class="link-primary modaltiket" data-bs-toggle="modal" data-bs-target="#formtiket" name="tiket" id="tiket">
                             Purchase Tiket
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
